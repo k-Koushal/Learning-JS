@@ -3,8 +3,8 @@
 }
 
 body {
-    background: rgba(0, 186, 243, 0.196);
-    padding: 5%;
+    background: rgba(81, 81, 81, 0.417);
+    padding: 2%;
 }
 
 .container {
@@ -17,12 +17,12 @@ body {
     text-align: center;
     height: max-content;
     position: relative;
-    padding: 5%;
+    padding: 5% 2%;
 }
 
 .container>.glass {
     position: relative;
-    width:80%;
+    width:90%;
     background: rgba(255, 255, 255, 0.152);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(7px);
