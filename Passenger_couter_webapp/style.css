@@ -1,102 +1,132 @@
-*{
+* {
     font-family: 'DM Serif Display', serif;
 }
-body{
-    background:rgba(0, 186, 243, 0.196);
-    padding:5%;
+
+body {
+    background: rgba(0, 186, 243, 0.196);
+    padding: 5%;
 }
-.container{
-    background:url("https://i.ibb.co/ByjyXvg/red-john-7k-o-54pr-MI-unsplash.jpg") no-repeat;
+
+.container {
+    background: url("https://i.ibb.co/ByjyXvg/red-john-7k-o-54pr-MI-unsplash.jpg") no-repeat;
     background-size: cover;
-    background-position:center;
-    display:flex;
-    flex-direction: column;
+    background-position: center;
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height:max-content;
+    height: max-content;
     position: relative;
-    color:white;
-    padding:5%;
+    padding: 5%;
 }
-.container>h1,h2,.buttons{
+
+.container>.glass {
+    position: relative;
+    width:80%;
+    background: rgba(255, 255, 255, 0.152);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
     z-index: 1;
 }
-.container::before{
-    content: "";
-    background:rgba(0, 0, 0, 0.578);
-    position:absolute;
-    height:100%;
-    width:100%;
-}
-#title{
-    letter-spacing:2px;
-    font-size: clamp(1.5rem,5vw,2.5rem);
-    color:rgb(255, 255, 255);
+
+#title {
+    letter-spacing: 2px;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.565);
     font-weight: bold;
+    padding-bottom: 5%;
     border-bottom: 3px double rgba(255, 255, 255, 0.465);
 }
-.buttons{
-    display:flex;
+
+.buttons {
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width:100%;
+    width: 100%;
 
 }
-#passenger-count{
-    font-size: clamp(3.5rem,10vw,5.5rem);
+
+#passenger-count {
+    font-size: clamp(3.5rem, 10vw, 5.5rem);
     margin-top: 0;
-    background: rgb(0, 191, 255);
-    background: linear-gradient(143deg, rgb(246, 255, 0) 30%, rgba(253,253,253,0.9045096432127538) 49%, rgb(246, 255, 0) 82%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+   color:rgb(0, 40, 115);
+   text-shadow: 0 0 6px rgba(255, 255, 255, 0.762);
+   font-weight: bold;
 }
-button{
-margin:2%;
-width:60%;
-height:clamp(2.5rem,5vw,3.5em);
-border-radius: 0.4rem;
-border-color: none;
-font-weight: bold;
+
+button {
+    margin: 2%;
+    width: 60%;
+    height: clamp(2.5rem, 5vw, 3.5em);
+    border-radius: 0.4rem;
+    border-color: none;
+    font-weight: bold;
 }
-#count-btn{
-    background-color:rgb(122, 35, 35);
-    color:white;
-    letter-spacing:1px;
-}
-#count-btn:hover{
-    background-color:rgb(255, 140, 140);
-    color:rgb(10, 29, 0);
-}
-#count-stop-btn{
-    background-color:rgb(0, 80, 9);
-    color:white;
-    letter-spacing:1px;
-}
-#count-stop-btn:hover{
-    background-color:rgb(133, 247, 147);
-    color:black;
-}
-#saveStatement{
+
+#count-btn-decrement {
+    background-color: rgb(122, 35, 35);
     color: white;
-    font-size: clamp(1rem,4vw,2rem);
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
-#total{
-    background:yellow;
-    width:50%;
-    height:clamp(2.5rem,5vw,3.5em);
+
+#count-btn-decrement:hover {
+    background-color: rgb(255, 140, 140);
+    color: rgb(10, 29, 0);
 }
-#total:hover{
-    background:rgb(255, 187, 0);
+
+#count-btn {
+    background-color: rgb(35, 55, 122);
+    color: white;
+    letter-spacing: 1px;
+}
+
+#count-btn:hover {
+    background-color: rgb(0, 81, 255);
+    color: rgb(255, 255, 255);
+}
+
+#count-stop-btn {
+    background-color: rgb(0, 80, 9);
+    color: white;
+    letter-spacing: 1px;
+}
+
+#count-stop-btn:hover {
+    background-color: rgb(133, 247, 147);
+    color: black;
+}
+
+#saveStatement {
     color:rgb(0, 0, 0);
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.613);
-    letter-spacing:1px;
+    font-size: clamp(1rem, 3vw, 2rem);
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding:1% 5%;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.609);
+
 }
-#totalCount{
+
+#total {
+    background: yellow;
+    width: 50%;
+    height: clamp(2.5rem, 5vw, 3.5em);
+}
+
+#total:hover {
+    background: rgb(255, 187, 0);
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.613);
+    letter-spacing: 1px;
+}
+
+#totalCount {
     color: white;
-    font-size: clamp(1rem,4vw,2rem);
+    font-size: clamp(1rem, 4vw, 2rem);
     letter-spacing: 2px;
 }
