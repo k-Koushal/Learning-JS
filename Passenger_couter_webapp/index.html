@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passenger Counter Web-App</title>
+    <!--stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <!--Google Fonts API-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <!--fontAwsome-->
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">Passenger Count</h1>
+        <h2 id="passenger-count">0</h2>
+        <div class="buttons">
+            <button id="count-btn" onclick="increment()">Increment</button>
+            <button id="count-stop-btn" onclick="save()">Save</button>
+            <p id="saveStatement">Previous Entries: </p>
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
