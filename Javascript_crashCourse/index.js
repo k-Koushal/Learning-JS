@@ -72,16 +72,16 @@ while(num<100){
      console.log(num)
  } */
 
- //!Data Types in JavaScript:
- //* Numbers
- //* Strings
- //* Objects(Dictionary)
- //* Boolean
- //* array(Lists)
- //* undefined
- //* Null
+//!Data Types in JavaScript:
+//* Numbers
+//* Strings
+//* Objects(Dictionary)
+//* Boolean
+//* array(Lists)
+//* undefined
+//* Null
 
- //! String Methods
+//! String Methods
 /*  let fruit="banana"
  console.log(fruit.length);
  console.log(fruit.indexOf('nan'));
@@ -98,7 +98,7 @@ while(num<100){
  console.log(fruits.split(""))
  //! Note: " .split() function works only for 'strings' "
 . */
- 
+
 
 //  //* Arrays
 // let fruits= ['apple','banana','orange'];
@@ -106,14 +106,14 @@ while(num<100){
 //  fruits[0]="Kiwi"; //? unlike strings, lists are Mutable.
 //  console.log(fruits); //? returns ['Kiwi', 'banana', 'orange']
 
- /* //todo: doing the same using For-loop
- for(let i=0; i<fruits.length;i++){
-     console.log(fruits[i])
- }
- */
+/* //todo: doing the same using For-loop
+for(let i=0; i<fruits.length;i++){
+    console.log(fruits[i])
+}
+*/
 
- //! Array Methods 
-let fruits= [1,'banana','orange'];
+//! Array Methods 
+/* let fruits= [1,'banana','orange'];
     console.log('to string ', fruits.toString())
     console.log("Joining ", fruits.join("-")) //?Joins the values with "-".
     console.log("popping :", fruits.pop(),"\nremaining list:",fruits); //? pops the last value of the Array
@@ -122,14 +122,83 @@ let fruits= [1,'banana','orange'];
     console.log("Shift means removes the fist list item :", fruits.shift(),fruits); //? removes first element of the Aray
     console.log("'unshift' means adds the fist list item :", fruits.unshift('new item'),fruits); //? adds first element to the Array
 
-    console.log("Push :",fruits.push('norway'),"\nfinal list:",fruits) //? basically appends a new item at the end of the list
+    console.log("Push :",fruits.push('norway'),"\nfinal list:",fruits) //? basically appends a new item at the end of the list */
 
-     
+/*     let vegetables=['broccoli','tomato','chow chow'];
+    let fruits= [1,'banana','orange'];
+    console.log(vegetables+fruits) //? Array Concatination
+    console.log(vegetables.slice(1,3)) //?slicing
+    console.log(vegetables.reverse())  //?reverse the list order
+ */
+/*     
+      let vegetables=['abbs','broccoli','tomato','chow chow'];
+      console.log(vegetables.sort()) //?alphabetical sorting
+ */
 
 
- 
+//!to sort Numbers,you need to add a function to the sort() function. 
+/*    let someList=[1,2,55,23434,56,1234,7,8,9,0,13]
+   console.log(someList.sort(function(a,b) {return a-b}))//? Ascending order
+   console.log(someList.sort(function(a,b) {return b-a}))//? Descending order
+
+ */
+//!working with empty Arrays: 
+/*   let emptyArray=new Array();
+  for (let num=0; num<10;num++){
+      emptyArray.push(num)
+  }
+  console.log(emptyArray) */
+
+//* Objects in JavaScript (or) Dictionaries in Python:
+/* let student = {
+    firstName: "Koushal",
+    lastName: "kandagatla",
+    age: 26,
+    height: '165 Cm',
+    studentInfo: function () {
+        return this.firstName + '\n' + this.lastName+ '\n'+this.age+'\n'+this.height; //?Object Oriented Programming in a JavaScript Object
+    }
+}; */
+/* console.log(student.firstName);
+console.log(student.lastName); */
+// todo: Note: you can't access objects using Indices in JavaScript
+/* console.log(student.age++);
+console.log(student); */
+/* console.log(student.studentInfo())  */
+
+//* if-else & Conditional Statements in JS:
+//! $$ AND
+//! || or
+/*  var age=prompt("What is you")
+ if ((age>=18)&&(age<=35)){
+    var status='target demo';
+    console.log(status)
+ } else{
+     var status='not my audience'
+     console.log(status)
+ } */
 
 
+//*Switch Statements
+//? differentiate bw week-day & weekend 
+//? day0=sunday ==> day6=Saturday & day4= Thursday
+/* switch (6) {
+    case 0:
+        text = 'Weekend'
+        break;
+    case 5:
+        text = 'weekend'
+        break;
+    case 6:
+        text = 'Weekend'
+        break;
+    default:
+        text = 'Week-Day'
+}
+console.log(text) */
 
-
-
+//*Json
+//! format: Array with Objects inside it.
+//! JSON is pure JavaScript
+//! when you try to print a JSON file, the file is interpreted as a String & entire data is printed-out.
+//! "JSON.parse(file_name)" print the correct format of a JSON file, whilst also applying Array methods on the JSON file.
