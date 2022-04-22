@@ -1,0 +1,38 @@
+.main{
+    width:80%;
+    padding:5%;
+    border:1px solid black;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    margin-top: 5%;
+}
+.row1{
+    border:1px dotted black;
+    width:100%;
+    text-align: center;
+    padding:5% 0 ;
+}
+.row2{
+    border:1px dotted black;
+    width:100%;
+    text-align: center;
+    padding:5% 0 ;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap!important;
+}
+#start,#reset{
+    font-size: clamp(0.6rem,3vw,1rem)!important;
+}
+#result{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+img{
+    margin:1rem;
+    box-shadow: 2px 2px 6px black;
+}
